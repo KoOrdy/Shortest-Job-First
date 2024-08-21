@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ancroId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sjf.os_project.ResultsController">
+    <children>
+        <VBox fx:id="process" layoutX="14.0" layoutY="58.0" prefHeight="328.0" prefWidth="72.0" />
+        <VBox fx:id="arrival" layoutX="94.0" layoutY="58.0" prefHeight="328.0" prefWidth="43.0" />
+        <VBox fx:id="burst" layoutX="143.0" layoutY="58.0" prefHeight="328.0" prefWidth="43.0" />
+        <VBox fx:id="waiting" layoutX="194.0" layoutY="58.0" prefHeight="328.0" prefWidth="43.0" />
+        <VBox fx:id="response" layoutX="245.0" layoutY="58.0" prefHeight="328.0" prefWidth="43.0" />
+        <VBox fx:id="turnaround" layoutX="310.0" layoutY="58.0" prefHeight="328.0" prefWidth="43.0" />
+        <Button fx:id="next" layoutX="440.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #4387da;" text="Next" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Text fill="#4387da" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Process">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="94.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Time" wrappingWidth="58.5068359375">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="143.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burst Time" wrappingWidth="58.5068359375">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="186.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting Time" wrappingWidth="58.5068359375">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="245.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Response Time" wrappingWidth="64.5068359375">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="310.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turnaround Time" wrappingWidth="90.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#4387da" layoutX="400.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Waiting Time" wrappingWidth="156.0">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Text>
+        <HBox fx:id="aveWaitnig" layoutX="400.0" layoutY="71.0" prefHeight="30.0" prefWidth="43.0" />
+        <Text fill="#4387da" layoutX="400.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Response Time" wrappingWidth="172.0">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Text>
+        <HBox fx:id="aveResponse" layoutX="400.0" layoutY="133.0" prefHeight="30.0" prefWidth="43.0" />
+        <Text fill="#4387da" layoutX="400.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average TurnAround Time" wrappingWidth="172.0">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Text>
+        <HBox fx:id="aveTurnaround" layoutX="400.0" layoutY="216.0" prefHeight="30.0" prefWidth="43.0" />
+    </children>
+</AnchorPane>
